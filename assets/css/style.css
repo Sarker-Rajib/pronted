@@ -126,6 +126,7 @@ body {
 @media (max-width: 767px) {
   .banner .main-content .banner-title {
     font-size: 40px;
+    line-height: 42px;
   }
 }
 .banner .main-content p {
@@ -183,6 +184,35 @@ body {
     max-width: 420px;
     bottom: 80.02vw;
     left: -40vw;
+  }
+}
+
+.banner-2 {
+  margin-top: -240px;
+  padding-bottom: 100px;
+  background: url(../images/bgb2.png) no-repeat bottom center/contain;
+}
+@media (max-width: 767px) {
+  .banner-2 {
+    margin-top: -290px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-2 img {
+    max-width: 220px;
+    padding-bottom: 20px;
+  }
+}
+.banner-2 .text p {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  line-height: 1.364;
+}
+@media (max-width: 768px) {
+  .banner-2 .text p {
+    font-size: 14px;
+    padding-bottom: 20px;
   }
 }
 
@@ -511,6 +541,144 @@ body {
 @media (max-width: 767px) {
   .it-solutions .connect .button-connect {
     padding: 5px 15px;
+  }
+}
+
+.offerings {
+  background: #0024cb;
+}
+.offerings .offbg {
+  padding: 120px 0;
+  background: url(../images/bgbqq.png) no-repeat left bottom/cover;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .offerings .offbg {
+    padding: 80px 0;
+    background: url(../images/bgmob.png) no-repeat bottom center/contain;
+  }
+}
+.offerings .offbg .heading {
+  text-align: center;
+}
+.offerings .offbg .heading h3 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.056;
+  padding-bottom: 40px;
+}
+.offerings .offbg .heading p {
+  font-size: 20px;
+  padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .offerings .offbg .heading p {
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+}
+.offerings .offbg .main-div {
+  text-align: center;
+}
+.offerings .offbg .main-div .image {
+  min-height: 130px;
+}
+@media (max-width: 768px) {
+  .offerings .offbg .main-div .image {
+    min-height: auto;
+    padding-top: 30px;
+  }
+}
+.offerings .offbg .main-div .image img {
+  max-width: 110px;
+  padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .offerings .offbg .main-div .image img {
+    padding-bottom: 15px;
+  }
+}
+.offerings .offbg .main-div h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.215;
+  padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .offerings .offbg .main-div h4 {
+    font-size: 18px;
+  }
+}
+.offerings .offbg .main-div p {
+  font-size: 17px;
+  padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .offerings .offbg .main-div p {
+    font-size: 15px;
+    padding-bottom: 25px;
+  }
+}
+.offerings .offbg .main-div .button-more {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.our-journey {
+  padding: 100px 0;
+}
+.our-journey h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.our-journey p {
+  font-size: 18px;
+}
+
+.our-mission {
+  padding: 100px 0;
+}
+.our-mission .main {
+  border: 5px solid var(--sky-blue);
+  border-radius: 40px;
+  padding: 70px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .our-mission .main {
+    padding: 40px;
+    border-radius: 50px;
+  }
+}
+.our-mission .main .topper {
+  position: absolute;
+  top: -60px;
+  background: #fff;
+  max-width: 120px;
+  padding: 20px;
+}
+.our-mission .main h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .our-mission .main h2 {
+    font-size: 25px;
+  }
+}
+.our-mission .main p {
+  font-size: 25px;
+  color: rgb(116, 116, 116);
+  line-height: 1.313;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .our-mission .main p {
+    font-size: 20px;
+    text-align: center;
   }
 }
 

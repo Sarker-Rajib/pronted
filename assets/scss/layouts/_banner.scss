@@ -20,13 +20,14 @@
                 color: var(--tertiary);
             }
 
-            .time{
+            .time {
                 color: var(--secondary);
             }
 
 
             @media(max-width: 767px) {
                 font-size: 40px;
+                line-height: 42px;
             }
         }
 

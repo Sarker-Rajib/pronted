@@ -3,7 +3,9 @@
     .navbar {
 
         .navbar-brand{
-            max-width: 140px;
+            @media(max-width: 768px){
+                max-width: 150px;
+            }
         }
         .navbar-nav {
             .nav-item {

@@ -72,8 +72,10 @@ body {
 .header {
   padding-top: 10px;
 }
-.header .navbar .navbar-brand {
-  max-width: 140px;
+@media (max-width: 768px) {
+  .header .navbar .navbar-brand {
+    max-width: 150px;
+  }
 }
 .header .navbar .navbar-nav .nav-item .nav-link {
   padding: 10px;
@@ -111,11 +113,15 @@ body {
 }
 .banner .main-content .banner-title {
   font-size: 65px;
+  line-height: 60px;
   color: var(--sky-blue);
   font-weight: 700;
 }
 .banner .main-content .banner-title span {
   color: var(--tertiary);
+}
+.banner .main-content .banner-title .time {
+  color: var(--secondary);
 }
 @media (max-width: 767px) {
   .banner .main-content .banner-title {
@@ -185,9 +191,26 @@ body {
   background: var(--primary);
   color: #fff;
 }
+@media (max-width: 767px) {
+  .footer {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer .image img {
+    max-width: 160px;
+  }
+}
 .footer .copyright {
   font-size: 18px;
   line-height: 1.556;
+}
+@media (max-width: 767px) {
+  .footer .copyright {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 15px;
+  }
 }
 .footer .get {
   font-size: 18px;
@@ -220,6 +243,13 @@ body {
   height: 40px;
   width: 40px;
 }
+@media (max-width: 767px) {
+  .footer .social-icon a {
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+  }
+}
 .footer .social-icon a .fab {
   color: var(--primary);
   font-size: 28px;
@@ -227,6 +257,12 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 5px;
+}
+@media (max-width: 767px) {
+  .footer .social-icon a .fab {
+    margin-top: 3px;
+    font-size: 18px;
+  }
 }
 
 /*===// end of layouts css === */
@@ -236,14 +272,19 @@ body {
 }
 @media (max-width: 767px) {
   .technology-solutions {
-    margin-top: -380px;
+    margin-top: -440px;
   }
 }
 .technology-solutions .section-header {
   font-size: 40px;
   color: rgb(0, 0, 0);
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .technology-solutions .section-header {
+    font-size: 20px;
+  }
 }
 .technology-solutions .rate {
   font-size: 22px;
@@ -252,25 +293,46 @@ body {
   font-weight: 900;
   padding-bottom: 40px;
 }
+@media (max-width: 767px) {
+  .technology-solutions .rate {
+    font-size: 14px;
+  }
+}
 .technology-solutions .r-title {
   font-size: 16px;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  .technology-solutions .r-title {
+    font-size: 12px;
+  }
+}
 .technology-solutions .button-more {
-  font-size: 1.1vw;
-  padding: 0.6vw 1.3vw;
+  padding: 10px 15px;
   border-radius: 27px;
   background-color: var(--primary);
   color: var(--white);
   border: none;
+}
+@media (max-width: 767px) {
+  .technology-solutions .button-more {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 }
 .technology-solutions .card-catelog {
   border-radius: 30px;
   width: 100%;
   min-height: 494px;
   padding: 35px;
+}
+@media (max-width: 767px) {
+  .technology-solutions .card-catelog {
+    padding: 30px 20px;
+    min-height: auto;
+  }
 }
 .technology-solutions .card-catelog .header {
   padding-left: 20px;
@@ -281,17 +343,33 @@ body {
   max-width: 80px;
   padding-bottom: 15px;
 }
+@media (max-width: 767px) {
+  .technology-solutions .card-catelog .header img {
+    max-width: 40px;
+  }
+}
 .technology-solutions .card-catelog .header .title {
   font-size: 22px;
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
+}
+@media (max-width: 767px) {
+  .technology-solutions .card-catelog .header .title {
+    font-size: 14px;
+  }
 }
 .technology-solutions .card-catelog .contents p,
 .technology-solutions .card-catelog .contents li {
   font-size: 16px;
   color: rgb(255, 255, 255);
   line-height: 1.111;
+}
+@media (max-width: 767px) {
+  .technology-solutions .card-catelog .contents p,
+.technology-solutions .card-catelog .contents li {
+    font-size: 12px;
+  }
 }
 .technology-solutions .card-catelog .contents ul {
   padding-left: 20px;
@@ -341,15 +419,43 @@ body {
   font-weight: bold;
   padding-bottom: 40px;
 }
+@media (max-width: 767px) {
+  .it-solutions .section-header {
+    font-size: 20px;
+  }
+}
 .it-solutions .item-card {
   border-radius: 25px;
   padding: 30px;
 }
-.it-solutions .item-card p,
+@media (max-width: 767px) {
+  .it-solutions .item-card {
+    min-height: 300px;
+  }
+}
+.it-solutions .item-card p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.273;
+}
+@media (max-width: 767px) {
+  .it-solutions .item-card p {
+    font-size: 16px;
+    line-height: 1;
+    color: #000;
+  }
+}
 .it-solutions .item-card li {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.273;
+}
+@media (max-width: 767px) {
+  .it-solutions .item-card li {
+    font-size: 12px;
+    line-height: 1;
+    color: #000;
+  }
 }
 .it-solutions .item-card ul li::before {
   content: "•";
@@ -361,11 +467,28 @@ body {
 .it-solutions .item-card.first {
   background: var(--primary);
 }
+@media (max-width: 767px) {
+  .it-solutions .item-card.first {
+    background: transparent;
+    border: 2px solid var(--secondary);
+  }
+}
 .it-solutions .item-card.second {
   background: var(--sky-blue);
 }
+@media (max-width: 767px) {
+  .it-solutions .item-card.second {
+    background: transparent;
+    border: 1px solid var(--tertiary);
+  }
+}
 .it-solutions .connect {
   padding-top: 150px;
+}
+@media (max-width: 767px) {
+  .it-solutions .connect {
+    padding-top: 70px;
+  }
 }
 .it-solutions .connect .section-header {
   font-size: 40px;
@@ -373,13 +496,22 @@ body {
   font-weight: 700;
   padding-bottom: 40px;
 }
+@media (max-width: 767px) {
+  .it-solutions .connect .section-header {
+    font-size: 20px;
+  }
+}
 .it-solutions .connect .button-connect {
-  font-size: 1.1vw;
-  padding: 0.6vw 1.3vw;
+  padding: 10px 25px;
   border-radius: 27px;
   background-color: var(--primary);
   color: var(--white);
   border: none;
+}
+@media (max-width: 767px) {
+  .it-solutions .connect .button-connect {
+    padding: 5px 15px;
+  }
 }
 
 /*===// end of components css === *//*# sourceMappingURL=style.css.map */

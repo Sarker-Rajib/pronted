@@ -3,9 +3,27 @@
     background: var(--primary);
     color: #fff;
 
+    @media(max-width: 767px) {
+       padding: 60px 0;
+    }
+
+    .image {
+        img {
+            @media(max-width: 767px) {
+                max-width: 160px;
+            }
+        }
+    }
+
     .copyright {
         font-size: 18px;
         line-height: 1.556;
+
+        @media(max-width: 767px) {
+            font-size: 14px;
+            text-align: center;
+            padding-top: 15px;
+        }
     }
 
     .get {
@@ -22,13 +40,13 @@
     }
 
     .input-group {
-        input{
+        input {
             border-top-left-radius: 30px;
             border-bottom-left-radius: 30px;
             padding: 15px;
         }
-        
-        .btn-sign{
+
+        .btn-sign {
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
             background: var(--sky-blue);
@@ -37,8 +55,9 @@
         }
 
     }
-    .social-icon{
-        a{
+
+    .social-icon {
+        a {
             background: #fff;
             border-radius: 50%;
             display: inline-block;
@@ -46,13 +65,24 @@
             height: 40px;
             width: 40px;
 
-            .fab{
+            @media(max-width: 767px) {
+                height: 25px;
+                width: 25px;
+                margin: 3px;
+            }
+
+            .fab {
                 color: var(--primary);
                 font-size: 28px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin-top: 5px;
+
+                @media(max-width: 767px) {
+                    margin-top: 3px;
+                    font-size: 18px;
+                }
             }
         }
     }

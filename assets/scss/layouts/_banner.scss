@@ -12,11 +12,16 @@
 
         .banner-title {
             font-size: 65px;
+            line-height: 60px;
             color: var(--sky-blue);
             font-weight: 700;
 
             span {
                 color: var(--tertiary);
+            }
+
+            .time{
+                color: var(--secondary);
             }
 
 

@@ -7,17 +7,40 @@
         color: rgb(0, 0, 0);
         font-weight: bold;
         padding-bottom: 40px;
+
+        @media(max-width: 767px) {
+            font-size: 20px;
+        }
     }
 
     .item-card {
         border-radius: 25px;
         padding: 30px;
 
-        p,
+        @media(max-width: 767px) {
+            min-height: 300px;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.273;
+            @media(max-width: 767px) {
+                font-size: 16px;
+                line-height: 1;
+                color: #000;
+            }
+        }
         li {
             font-size: 20px;
             font-weight: 700;
             line-height: 1.273;
+
+            @media(max-width: 767px) {
+                font-size: 12px;
+                line-height: 1;
+                color: #000;
+            }
         }
 
 
@@ -31,30 +54,51 @@
 
         &.first {
             background: var(--primary);
+            
+            @media(max-width: 767px) {
+                background: transparent;
+                border: 2px solid var(--secondary);
+            }
         }
 
         &.second {
             background: var(--sky-blue);
+            @media(max-width: 767px) {
+                background: transparent;
+                border: 1px solid var(--tertiary);
+            }
         }
     }
 
-    .connect{
+    .connect {
         padding-top: 150px;
+
+        @media(max-width: 767px) {
+            padding-top: 70px;
+        }
 
         .section-header {
             font-size: 40px;
             color: rgb(0, 0, 0);
             font-weight: 700;
             padding-bottom: 40px;
+
+            @media(max-width: 767px) {
+                font-size: 20px;
+            }
         }
 
         .button-connect {
-            font-size: 1.1vw;
-            padding: 0.6vw 1.3vw;
+            padding: 10px 25px;
             border-radius: 27px;
             background-color: var(--primary);
             color: var(--white);
             border: none;
+
+            @media(max-width: 767px) {
+                padding: 5px 15px;
+
+            }
         }
     }
 }

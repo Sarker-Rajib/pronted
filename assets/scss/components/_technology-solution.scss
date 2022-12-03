@@ -2,14 +2,19 @@
     margin-top: -240px;
 
     @media(max-width: 767px) {
-        margin-top: -380px;
+        margin-top: -440px;
     }
 
     .section-header {
         font-size: 40px;
         color: rgb(0, 0, 0);
-        font-weight: bold;
+        font-weight: 700;
         padding-bottom: 40px;
+
+        @media(max-width: 767px) {
+            font-size: 20px;
+        }
+
     }
 
     .rate {
@@ -18,6 +23,10 @@
         line-height: 1.2;
         font-weight: 900;
         padding-bottom: 40px;
+
+        @media(max-width: 767px) {
+            font-size: 14px;
+        }
     }
 
     .r-title {
@@ -25,15 +34,23 @@
         color: rgb(0, 0, 0);
         line-height: 1.2;
         font-weight: 700;
+
+        @media(max-width: 767px) {
+            font-size: 12px;
+        }
     }
 
     .button-more {
-        font-size: 1.1vw;
-        padding: 0.6vw 1.3vw;
+        padding: 10px 15px;
         border-radius: 27px;
         background-color: var(--primary);
         color: var(--white);
         border: none;
+
+        @media(max-width: 767px) {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
     }
 
     .card-catelog {
@@ -41,6 +58,11 @@
         width: 100%;
         min-height: 494px;
         padding: 35px;
+
+        @media(max-width: 767px) {
+            padding: 30px 20px;
+            min-height: auto;
+        }
 
         .header {
             padding-left: 20px;
@@ -50,13 +72,21 @@
             img {
                 max-width: 80px;
                 padding-bottom: 15px;
+
+                @media(max-width: 767px) {
+                    max-width: 40px;
+                }
             }
 
             .title {
                 font-size: 22px;
                 color: rgb(255, 255, 255);
-                font-weight: bold;
+                font-weight: 700;
                 line-height: 1.2;
+
+                @media(max-width: 767px) {
+                    font-size: 14px;
+                }
             }
         }
 
@@ -67,6 +97,10 @@
                 font-size: 16px;
                 color: rgb(255, 255, 255);
                 line-height: 1.111;
+
+                @media(max-width: 767px) {
+                    font-size: 12px;
+                }
             }
 
             ul {

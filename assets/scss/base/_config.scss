@@ -1,0 +1,12 @@
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  @media screen and (min-width: 1400px) {
+    max-width: 1400px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-inline: 35px;
+  }
+}

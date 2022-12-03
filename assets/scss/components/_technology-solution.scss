@@ -1,0 +1,121 @@
+.technology-solutions {
+    margin-top: -240px;
+
+    @media(max-width: 767px) {
+        margin-top: -380px;
+    }
+
+    .section-header {
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        padding-bottom: 40px;
+    }
+
+    .rate {
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        font-weight: 900;
+        padding-bottom: 40px;
+    }
+
+    .r-title {
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .button-more {
+        font-size: 1.1vw;
+        padding: 0.6vw 1.3vw;
+        border-radius: 27px;
+        background-color: var(--primary);
+        color: var(--white);
+        border: none;
+    }
+
+    .card-catelog {
+        border-radius: 30px;
+        width: 100%;
+        min-height: 494px;
+        padding: 35px;
+
+        .header {
+            padding-left: 20px;
+            margin-bottom: 30px;
+            border-left: 5px solid #fff;
+
+            img {
+                max-width: 80px;
+                padding-bottom: 15px;
+            }
+
+            .title {
+                font-size: 22px;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                line-height: 1.2;
+            }
+        }
+
+        .contents {
+
+            p,
+            li {
+                font-size: 16px;
+                color: rgb(255, 255, 255);
+                line-height: 1.111;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            ul li::before {
+                content: "\2022";
+                font-size: 25px;
+                font-weight: bold;
+                display: inline-block;
+                margin-left: -1em;
+            }
+        }
+
+        &.L1 {
+            background: var(--primary);
+
+            ul li::before {
+                color: var(--sky-blue);
+            }
+        }
+
+        &.L2 {
+            background: var(--tertiary);
+
+            ul li::before {
+                color: var(--secondary);
+            }
+        }
+
+        &.L3 {
+            background: var(--sky-blue);
+
+            header {
+                border-left: 5px solid var(--sky-blue);
+            }
+
+            ul li::before {
+                color: var(--primary);
+            }
+        }
+
+        &.L4 {
+            background: var(--secondary);
+
+            ul li::before {
+                color: var(--tertiary);
+            }
+        }
+    }
+}

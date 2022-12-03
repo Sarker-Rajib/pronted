@@ -1,0 +1,36 @@
+.header {
+    padding-top: 10px;
+    .navbar {
+
+        .navbar-brand{
+            max-width: 140px;
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    padding: 10px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #0024cb;
+                    text-decoration: none;
+                    border-radius: 25px;
+                    padding: 0.6vw 1.4vw;
+
+                    &:hover {
+                        background-color: var(--primary);
+                        color: var(--white);
+                        padding: 0.6vw 1.4vw;
+                        border-radius: 25px;
+                    }
+
+                    &.active {
+                        background-color: var(--primary);
+                        color: var(--white);
+                        padding: 0.6vw 1.4vw;
+                        border-radius: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

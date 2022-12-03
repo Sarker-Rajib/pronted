@@ -1,0 +1,60 @@
+.it-solutions {
+    color: #fff;
+    padding: 100px 0;
+
+    .section-header {
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        padding-bottom: 40px;
+    }
+
+    .item-card {
+        border-radius: 25px;
+        padding: 30px;
+
+        p,
+        li {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.273;
+        }
+
+
+        ul li::before {
+            content: "\2022";
+            font-size: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: -1em;
+        }
+
+        &.first {
+            background: var(--primary);
+        }
+
+        &.second {
+            background: var(--sky-blue);
+        }
+    }
+
+    .connect{
+        padding-top: 150px;
+
+        .section-header {
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            padding-bottom: 40px;
+        }
+
+        .button-connect {
+            font-size: 1.1vw;
+            padding: 0.6vw 1.3vw;
+            border-radius: 27px;
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 .career-banner {
     padding-top: 100px;
+    overflow: hidden;
 
     @media(max-width: 767px) {
         padding-top: 50px;
@@ -51,6 +52,60 @@
             font-size: 16px;
             padding-bottom: 20px;
         }
+
+    }
+
+
+    .po1 {
+        position: absolute;
+        z-index: -88;
+        left: 20px;
+        top: 80px;
+
+        @media(max-width: 991px) {
+            left: 0;
+        }
+    }
+
+    .po2 {
+        position: absolute;
+        z-index: -88;
+        top: 40%;
+        left: 0;
+
+        @media(max-width: 991px) {
+            left: -20px;
+        }
+    }
+
+    .po3 {
+        position: absolute;
+        z-index: -88;
+        right: 20px;
+        top: 100px;
+
+        @media(max-width: 991px) {
+            top: 140px;
+        }
+    }
+
+    .po4 {
+        position: absolute;
+        z-index: -88;
+        right: 0;
+        top: 60%;
+        transform: rotate(180deg);
+
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+
+    .po5 {
+        position: absolute;
+        z-index: -88;
+        bottom: 30px;
+        right: 200px;
 
     }
 

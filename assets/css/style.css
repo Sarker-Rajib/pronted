@@ -386,6 +386,7 @@ body {
 
 .career-banner {
   padding-top: 100px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .career-banner {
@@ -437,6 +438,57 @@ body {
     font-size: 16px;
     padding-bottom: 20px;
   }
+}
+.career-banner .po1 {
+  position: absolute;
+  z-index: -88;
+  left: 20px;
+  top: 80px;
+}
+@media (max-width: 991px) {
+  .career-banner .po1 {
+    left: 0;
+  }
+}
+.career-banner .po2 {
+  position: absolute;
+  z-index: -88;
+  top: 40%;
+  left: 0;
+}
+@media (max-width: 991px) {
+  .career-banner .po2 {
+    left: -20px;
+  }
+}
+.career-banner .po3 {
+  position: absolute;
+  z-index: -88;
+  right: 20px;
+  top: 100px;
+}
+@media (max-width: 991px) {
+  .career-banner .po3 {
+    top: 140px;
+  }
+}
+.career-banner .po4 {
+  position: absolute;
+  z-index: -88;
+  right: 0;
+  top: 60%;
+  transform: rotate(180deg);
+}
+@media (max-width: 991px) {
+  .career-banner .po4 {
+    display: none;
+  }
+}
+.career-banner .po5 {
+  position: absolute;
+  z-index: -88;
+  bottom: 30px;
+  right: 200px;
 }
 
 .footer {
@@ -1225,6 +1277,7 @@ body {
 
 .current-positions {
   padding-bottom: 100px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .current-positions {
@@ -1306,6 +1359,30 @@ body {
   .current-positions .content-card ul li {
     font-size: 18px;
   }
+}
+.current-positions .po1 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: -9;
+}
+.current-positions .po2 {
+  position: absolute;
+  top: 40%;
+  right: 50px;
+  z-index: -22;
+}
+.current-positions .po3 {
+  position: absolute;
+  top: 40%;
+  left: -50px;
+  z-index: -99;
+}
+.current-positions .po4 {
+  position: absolute;
+  top: -200px;
+  right: -50px;
+  z-index: -99;
 }
 
 .testimonial {

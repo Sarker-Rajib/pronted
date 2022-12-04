@@ -16,6 +16,13 @@ const detail2021 = document.getElementById("detail-2021");
 const landmarkYear2022 = document.getElementById("landmark-year-2022");
 const detail2022 = document.getElementById("detail-2022");
 
+const landmarkYears = document.querySelectorAll(".landmark-year-block");
+console.log(landmarkYears);
+
+landmarkYears.forEach(landmark => {
+
+})
+
 // Show hidden DIV on hover
 landmarkYear2017.addEventListener(
   "mouseover",
@@ -60,9 +67,9 @@ landmarkYear2020.addEventListener(
   }
 );
 // Hide DIV on mouse out
-// landmarkYear2020.addEventListener("mouseout", function handleMouseOut() {
-//   detail2020.style.visibility = "hidden";
-// });
+landmarkYear2020.addEventListener("mouseout", function handleMouseOut() {
+  detail2020.style.visibility = "hidden";
+});
 
 // Show hidden DIV on hover
 landmarkYear2021.addEventListener(

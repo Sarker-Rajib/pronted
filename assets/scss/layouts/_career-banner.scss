@@ -1,0 +1,57 @@
+.career-banner {
+    padding-top: 100px;
+
+    @media(max-width: 767px) {
+        padding-top: 50px;
+    }
+
+    .relative-image {
+        position: absolute;
+        bottom: -20px;
+        right: -10px;
+        z-index: -1;
+    }
+
+    .title {
+        font-size: 55px;
+        line-height: 1.1;
+        color: var(--sky-blue);
+        font-weight: 700;
+        padding-bottom: 25px;
+
+        @media(max-width: 991px) {
+            font-size: 35px;
+        }
+    }
+
+    .text-section {
+        padding-top: 50px;
+
+        @media(max-width: 991px) {
+            padding-top: 0;
+        }
+    }
+
+    .sub-title {
+        font-size: 34px;
+        padding-bottom: 25px;
+        font-weight: 700;
+
+        @media(max-width: 991px) {
+            font-size: 20px;
+        }
+
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.2;
+
+        @media(max-width: 767px) {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+
+    }
+
+}

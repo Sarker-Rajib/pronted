@@ -69,36 +69,4 @@
             }
         }
     }
-
-    .connect {
-        padding-top: 150px;
-
-        @media(max-width: 767px) {
-            padding-top: 70px;
-        }
-
-        .section-header {
-            font-size: 40px;
-            color: rgb(0, 0, 0);
-            font-weight: 700;
-            padding-bottom: 40px;
-
-            @media(max-width: 767px) {
-                font-size: 20px;
-            }
-        }
-
-        .button-connect {
-            padding: 10px 25px;
-            border-radius: 27px;
-            background-color: var(--primary);
-            color: var(--white);
-            border: none;
-
-            @media(max-width: 767px) {
-                padding: 5px 15px;
-
-            }
-        }
-    }
 }

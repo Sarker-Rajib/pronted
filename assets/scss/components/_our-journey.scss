@@ -1,9 +1,13 @@
 .our-journey{
-    padding: 100px 0;
+    padding-top: 100px;
+
+    @media(max-width: 768px){
+        padding-top: 50px;
+    }
 
     h2{
         font-size: 25px;
-        font-weight: 700;
+        font-weight: 900;
     }
 
     p{

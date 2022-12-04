@@ -12,7 +12,7 @@
 
         .banner-title {
             font-size: 65px;
-            line-height: 60px;
+            line-height: 1.1;
             color: var(--sky-blue);
             font-weight: 700;
 
@@ -48,6 +48,12 @@
         position: absolute;
         top: 13.02vw;
         left: 0;
+        z-index: -33;
+        
+        @media(min-width: 1200px){
+            top: 1.8vw;
+            max-width: 90px;
+        }
 
         @media(max-width: 767px) {
             max-width: 40px;
@@ -73,6 +79,11 @@
         top: 1.02vw;
         right: 0;
         z-index: -1;
+
+        @media(max-width: 1500px) {
+            max-width: 320px;
+            top: 10.02vw;
+        }
 
         @media(max-width: 768px) {
             max-width: 120px;

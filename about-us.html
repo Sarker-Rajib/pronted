@@ -18,7 +18,7 @@
 
 <body>
   <!-- all codes for ===***header***=== starts from here -->
-  <header class="header">
+  <header class="header fixed-top" style="background: #fff">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
 
@@ -39,19 +39,21 @@
             <li class="nav-item">
               <a class="nav-link" href="about-us.html">About Us</a>
             </li>
-             
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Offerings
               </a>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Online Store</a></li>
+                <li><a class="dropdown-item" href="offering-online-class.html">Online Classes</a></li>
+                <li><a class="dropdown-item" href="#">ERP</a></li>
                 <li><a class="dropdown-item" href="Offerings-tech&it.html">Tech & IT</a></li>
-                <li><a class="dropdown-item" href="offering-online-class.html">Online Class</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="career.html">Careers</a>
+              <a class="nav-link" href="career.html">Careers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -169,40 +171,46 @@
               <div class="image">
                 <img class="img-fluid" src="assets/images/online-shopping.png" alt="im">
               </div>
-              <h4>Online Store</h4>
-              <p>One-stop-shop for parents
-                to buy academic kits, uniforms
-                & accessories</p>
+              <div class="text">
+                <h4>Online Store</h4>
+                <p>One-stop-shop for parents
+                  to buy academic kits, uniforms
+                  & accessories</p>
+              </div>
               <a href="#" class="button-more">Know More</a>
             </div>
             <div class="col-md-6 col-xl-3">
               <div class="image">
                 <img class="img-fluid" src="assets/images/tutorial.png" alt="im">
               </div>
-              <h4>Online Classes</h4>
-              <p>Digitally enabled education
-                seamlessly combined
-                with school curriculum</p>
+              <div class="text">
+                <h4>Online Classes</h4>
+                <p>Digitally enabled education
+                  seamlessly combined
+                  with school curriculum</p>
+              </div>
               <a href="#" class="button-more">Know More</a>
             </div>
             <div class="col-md-6 col-xl-3">
               <div class="image">
                 <img class="img-fluid" src="assets/images/setting.png" alt="im">
-
               </div>
-
-              <h4>ERP</h4>
-              <p>Advanced school
-                management software</p>
+              <div class="text">
+                <h4>ERP</h4>
+                <p>Advanced school
+                  management software</p>
+              </div>
               <a href="#" class="button-more">Know More</a>
             </div>
             <div class="col-md-6 col-xl-3">
               <div class="image">
                 <img class="img-fluid" src="assets/images/worldwide.png" alt="im">
               </div>
-              <h4>IT Solutions</h4>
-              <p>The foundation for all
-                future-ready institutions</p>
+              <div class="text">
+                <h4>IT Solutions</h4>
+                <p>The foundation for all
+                  future-ready institutions</p>
+              </div>
               <a href="#" class="button-more">Know More</a>
             </div>
           </div>
@@ -252,7 +260,7 @@
           </div>
         </div>
 
-        <div class="row position-relative landmark-years">
+        <div class="d-none d-lg-flex row position-relative landmark-years">
           <div class="landmark-year-block col-2" id="landmark-year-2017">
             <div class="landmark-year pb-2">2017</div>
             <div class="landmark-year-details" id="detail-2017">
@@ -287,8 +295,7 @@
             <div class="landmark-year pb-2">2020</div>
             <div class="landmark-year-details" id="detail-2020">
               <p class="detail-info">
-                Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum
-                dolor, sit amet consectetur adipisicing.
+                Launched Online Classes to facilitate quality education at affordable rates during the pandemic
               </p>
               <div class="detail-year">2020</div>
             </div>
@@ -311,6 +318,49 @@
                 dolor, sit amet consectetur adipisicing.
               </p>
               <div class="detail-year">2022</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-block d-lg-none landmark-mobile">
+          <div class="swiper landmark">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="p-3">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>2017</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-3">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>2018</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-3">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>2019</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-3">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>2020</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-3">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>2021</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-3">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p>2022</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -340,13 +390,12 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
   <!-- all codes for ===***our-journey***=== ended -->
 
   <!-- our team starts -->
-  <section class="our-team">
+  <section class="our-team overflow-hidden">
     <div class="position-relative py-2" style="background: rgb(255, 255, 255);">
       <img class="img-fluid position-absolute top-0 start-0" src="assets/images/55.png" alt="q">
       <img class="img-fluid position-absolute top-0 end-0 pe-5" src="assets/images/t1.png" alt="q">
@@ -354,9 +403,9 @@
     <div class="container">
       <h4 class="pb-5 heading">Our Team</h4>
     </div>
-    <div class="container-fluidoverflow-hidden">
+    <div class="container">
       <div class="left">
-        <div class="swiper mySwiper">
+        <div class="swiper teamSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div>
@@ -378,7 +427,7 @@
                   <img src="assets/images/team/2.png" alt="team-member" class="img-fluid">
                 </div>
                 <div class="p-md-3 p-2 text">
-                  <h5 class="text-start w-full">name</h5>
+                  <h5 class="text-start w-full">Prasanna</h5>
                 </div>
               </div>
             </div>
@@ -388,7 +437,7 @@
                   <img src="assets/images/team/3.png" alt="team-member" class="img-fluid">
                 </div>
                 <div class="p-md-3 p-2 text">
-                  <h5 class="text-start w-full">name</h5>
+                  <h5 class="text-start w-full">Rajani Perisetti</h5>
                 </div>
               </div>
             </div>
@@ -398,7 +447,7 @@
                   <img src="assets/images/team/4.png" alt="team-member" class="img-fluid">
                 </div>
                 <div class="p-md-3 p-2 text">
-                  <h5 class="text-start w-full">name</h5>
+                  <h5 class="text-start w-full">Sivaram</h5>
                 </div>
               </div>
             </div>
@@ -419,6 +468,36 @@
                 </div>
                 <div class="p-md-3 p-2 text">
                   <h5 class="text-start w-full">name</h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-none d-lg-block">
+              <div>
+                <div class="image">
+                  <!-- <img src="assets/images/team/3.png" alt="team-member" class="img-fluid"> -->
+                </div>
+                <div class="p-md-3 p-2 text">
+                  <h5 class="text-start w-full"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-none d-lg-block">
+              <div>
+                <div class="image">
+                  <!-- <img src="assets/images/team/3.png" alt="team-member" class="img-fluid"> -->
+                </div>
+                <div class="p-md-3 p-2 text">
+                  <h5 class="text-start w-full"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-none d-lg-block">
+              <div>
+                <div class="image">
+                  <!-- <img src="assets/images/team/3.png" alt="team-member" class="img-fluid"> -->
+                </div>
+                <div class="p-md-3 p-2 text">
+                  <h5 class="text-start w-full"></h5>
                 </div>
               </div>
             </div>
@@ -488,10 +567,9 @@
   <script src="assets/vendor/Swiper-slider/js/swiper-bundle.min.js"></script>
   <script src="assets/js/custom.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 8,
+    var swiper = new Swiper(".teamSwiper", {
+      // slidesPerView: 5,
       spaceBetween: 30,
-      centeredSlides: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -503,23 +581,27 @@
 
       breakpoints: {
         320: {
-          slidesPerView: 4,
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        475: {
+          slidesPerView: 2,
           spaceBetween: 20
         },
         768: {
-          slidesPerView: 6,
+          slidesPerView: 3,
           spaceBetween: 20
         },
         992: {
-          slidesPerView: 7,
-          spaceBetween: 20
-        },
-        1200: {
-          slidesPerView: 8,
+          slidesPerView: 4,
           spaceBetween: 20
         },
       }
+    });
 
+    var swiper = new Swiper(".landmark", {
+      effect: "cards",
+      grabCursor: true,
     });
   </script>
   <!-- .........script ended............. -->

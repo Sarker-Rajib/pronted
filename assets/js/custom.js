@@ -17,16 +17,12 @@ const landmarkYear2022 = document.getElementById("landmark-year-2022");
 const detail2022 = document.getElementById("detail-2022");
 
 const landmarkYears = document.querySelectorAll(".landmark-year-block");
-console.log(landmarkYears);
+// console.log(landmarkYears);
 
-landmarkYears.forEach(landmark => {
-
-})
 
 // Show hidden DIV on hover
 landmarkYear2017.addEventListener(
-  "mouseover",
-  function handleMouseOver() {
+  "mouseover", function handleMouseOver() {
     detail2017.style.visibility = "visible";
   }
 );

@@ -1,5 +1,7 @@
 .header {
-    padding-top: 10px;
+    padding: 10px 0;
+    z-index: 999;
+
     .navbar {
 
         .navbar-brand{
@@ -7,6 +9,7 @@
                 max-width: 150px;
             }
         }
+
         .navbar-nav {
             .nav-item {
                 .nav-link {
@@ -21,15 +24,40 @@
                     &:hover {
                         background-color: var(--primary);
                         color: var(--white);
-                        padding: 0.6vw 1.4vw;
                         border-radius: 25px;
                     }
 
                     &.active {
                         background-color: var(--primary);
                         color: var(--white);
-                        padding: 0.6vw 1.4vw;
                         border-radius: 25px;
+                    }
+
+                    @media(max-width: 768px){
+                        margin-top: 5px;
+                        padding: 5px 20px;
+                    }
+                }
+
+                &.dropdown{
+                    .dropdown-menu{
+                        padding: 0;
+                        overflow: hidden;
+
+                        .dropdown-item{
+                            color: var(--primary);
+                            padding: 10px 15px;
+                            overflow: hidden;
+
+                            &:hover{
+                                background: rgba(17, 15, 153, 0.829);
+                                color: #fff;
+                            }
+
+                            @media(max-width: 768px){
+                                padding: 5px;
+                            }
+                        }
                     }
                 }
             }

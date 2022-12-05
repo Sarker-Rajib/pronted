@@ -18,6 +18,10 @@
    z-index: -88;
 }
 
+.index-top{
+   z-index: 9999999999999999999;
+}
+
 .connect {
    padding-top: 150px;
 
@@ -44,8 +48,7 @@
       border: none;
 
       @media(max-width: 767px) {
-         padding: 5px 15px;
-
+         padding: 10px 20px;
       }
    }
 }

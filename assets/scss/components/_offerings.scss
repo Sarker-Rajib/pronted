@@ -36,7 +36,7 @@
             text-align: center;
 
             .image {
-                min-height: 130px;
+                min-height: 140px;
 
                 @media(max-width: 768px) {
                     min-height: auto;
@@ -54,32 +54,49 @@
                 }
             }
 
-            h4 {
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 1.215;
-                padding-bottom: 10px;
+            .text{
+                @media screen and (min-width: 1199px){
+                    min-height: 160px;
+                }
 
-                @media(max-width: 768px) {
-                    font-size: 18px;
+                @media screen and (min-width: 1400px){
+                    min-height: 150px;
+                }
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 1.215;
+                    padding-bottom: 10px;
+    
+                    @media(max-width: 768px) {
+                        font-size: 18px;
+                    }
+                }
+    
+                p {
+                    font-size: 17px;
+                    padding-bottom: 40px;
+    
+                    @media(max-width: 768px) {
+                        font-size: 15px;
+                        padding-bottom: 25px;
+                    }
                 }
             }
 
-            p {
-                font-size: 17px;
-                padding-bottom: 40px;
-
-                @media(max-width: 768px) {
-                    font-size: 15px;
-                    padding-bottom: 25px;
-                }
-            }
 
             .button-more {
                 border: 2px solid #fff;
                 color: #fff;
                 padding: 10px 20px;
                 border-radius: 25px;
+
+                &:hover{
+                    color: #0024cb;
+                    background: #fff;
+                    font-weight: 600;
+                }
             }
 
         }

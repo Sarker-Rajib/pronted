@@ -1,14 +1,17 @@
 .career-banner {
-    padding-top: 100px;
+    padding-top: 200px;
     overflow: hidden;
+    padding-bottom: 60px;
 
     @media(max-width: 767px) {
-        padding-top: 50px;
+        padding-top: 120px;
+        padding-bottom: 40px;
+
     }
 
     .relative-image {
         position: absolute;
-        bottom: -20px;
+        bottom: -40px;
         right: -10px;
         z-index: -1;
     }
@@ -98,6 +101,7 @@
 
         @media(max-width: 991px) {
             display: none;
+
         }
     }
 
@@ -106,7 +110,17 @@
         z-index: -88;
         bottom: 30px;
         right: 200px;
-
+        display: none;
     }
 
+    .carousel {
+        position: relative;
+        padding-bottom: 50px;
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 0px;
+            z-index: 999;
+        }
+    }
 }

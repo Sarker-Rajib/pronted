@@ -1,6 +1,6 @@
 .it-solutions {
     color: #fff;
-    padding: 100px 0;
+    padding: 100px 0;position: relative;
 
     .section-header {
         font-size: 40px;
@@ -28,7 +28,6 @@
             @media(max-width: 767px) {
                 font-size: 16px;
                 line-height: 1;
-                color: #000;
             }
         }
         li {
@@ -39,7 +38,6 @@
             @media(max-width: 767px) {
                 font-size: 12px;
                 line-height: 1;
-                color: #000;
             }
         }
 
@@ -50,23 +48,44 @@
             font-weight: bold;
             display: inline-block;
             margin-left: -1em;
+
+            @media(max-width: 767px) {
+                font-size: 18px;
+            }
         }
 
         &.first {
             background: var(--primary);
             
-            @media(max-width: 767px) {
-                background: transparent;
-                border: 2px solid var(--secondary);
-            }
         }
 
         &.second {
             background: var(--sky-blue);
-            @media(max-width: 767px) {
-                background: transparent;
-                border: 1px solid var(--tertiary);
-            }
+        }
+    }
+
+    .blue-shade{
+        position: absolute;
+        right: 0;
+        top: 20%;
+        z-index: -77;
+        // display: none;
+
+        @media(max-width: 767px){
+            max-width: 300px;
+        }
+    }
+
+    .circle-shade{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -77;
+        transform: rotate(180deg);
+        // display: none;
+
+        @media(max-width: 767px){
+            max-width: 60px;
         }
     }
 }

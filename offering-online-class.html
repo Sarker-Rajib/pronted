@@ -18,7 +18,7 @@
 
 <body>
   <!-- all codes for ===***header***=== starts from here -->
-  <header class="header">
+  <header class="header fixed-top" style="background: #fff">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
 
@@ -46,8 +46,10 @@
                 Offerings
               </a>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Online Store</a></li>
+                <li><a class="dropdown-item" href="offering-online-class.html">Online Classes</a></li>
+                <li><a class="dropdown-item" href="#">ERP</a></li>
                 <li><a class="dropdown-item" href="Offerings-tech&it.html">Tech & IT</a></li>
-                <li><a class="dropdown-item" href="offering-online-class.html">Online Class</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -67,7 +69,6 @@
 
   <!-- all codes for ===***banner***=== starts from here -->
   <section class="banner overflow-hidden">
-
     <div class="home-section-1">
       <img class="home-section-1-c1" src="assets/images/c1.png">
       <!-- <img class="home-section-1-t1 d-none d-lg-inline-block" src="assets/images/t2.png"> -->
@@ -119,11 +120,11 @@
 
           <div class="row gy-5 ps-4 ps-md-0 align-items-center">
             <div class="col-md-4">
-              <div class="row align-items-center">
-                <div class="col-3">
-                  <img class="img-fluid" src="assets/images/online-class/read.png" alt="A">
+              <div class="d-flex align-items-center justify-content-start justify-content-lg-center">
+                <div class="p-3">
+                  <img class="img-fluid ico-image" src="assets/images/online-class/read.png" alt="A">
                 </div>
-                <div class="col-9">
+                <div class="ms-2">
                   <h2 class="title-add">Better student <br>
                     <span class="sky">outcomes</span>
                   </h2>
@@ -131,22 +132,22 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="row align-items-center">
-                <div class="col-3">
-                  <img class="img-fluid" src="assets/images/online-class/family.png" alt="A">
+              <div class="d-flex align-items-center justify-content-start justify-content-lg-center">
+                <div class="p-3">
+                  <img class="img-fluid ico-image" src="assets/images/online-class/family.png" alt="A">
                 </div>
-                <div class="col-9">
+                <div class="ms-2">
                   <h2 class="title-add"><span class="yell">Happier</span> <br>
                     parents</h2>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="row align-items-center">
-                <div class="col-3">
-                  <img class="img-fluid" src="assets/images/online-class/school.png" alt="A">
+              <div class="d-flex align-items-center justify-content-start justify-content-lg-center">
+                <div class="p-3">
+                  <img class="img-fluid ico-image" src="assets/images/online-class/school.png" alt="A">
                 </div>
-                <div class="col-9">
+                <div class="ps-2">
                   <h2 class="title-add">School <br>
                     <span class="tertiary">success</span>
                   </h2>
@@ -171,12 +172,62 @@
         </div>
       </div>
     </div>
+
+    <img src="assets/images/t2.png" alt="w" class="tt1 img-fluid">
+    <img src="assets/images/11.png" alt="w" class="tt2 img-fluid">
+    <img src="assets/images/12.png" alt="w" class="rr1 img-fluid">
+    <img src="assets/images/aaq.png" alt="w" class="dots1 img-fluid">
+    <img src="assets/images/aaq.png" alt="w" class="dots2 img-fluid">
+
   </section>
   <!-- all codes for ===***banner***=== ended -->
 
-
   <!-- all codes for ===***benefits***=== starts from here -->
-  <section class="benefits overflow-hidden">
+  <section class="benefits overflow-hidden d-none d-lg-block">
+    <div class="benefit-container">      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="teacher teacher-desktop" id="techer-content">
+            <div class="row align-items-center">
+              <div class="col text-center">
+                <img src="assets/images/online-class/teacher.png" alt="student" class="img-fluid">
+                <h2 class="title text-start">Benefits to schools</h2>
+              </div>
+              <div class="col" id="techer-benefits">
+                <ul>
+                  <li>Cost-efficient and convenient for any number of students</li>
+                  <li> In-school digital learning makes it easy to integrate with current schedule</li>
+                  <li>Enhance value to students by preparing them for various competitive exams</li>
+                  <li>Establish your school’s name with better results in entrance tests</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="student student-desktop" id="student-content">
+            <div class="row align-items-center">
+              <div class="col">
+                <ul class="student-profit" id="student-benefits">
+                  <li>Strong foundation for competitive exams (IIT, NEET, etc.) and talent tests</li>
+                  <li>Opportunity to learn from highly qualified faculty</li>
+                  <li>Faster learning, deeper understanding of concepts</li>
+                  <li>Holistic education – mix of academics and career guidance</li>
+                  <li>Opportunity to learn in a modern, digital environment</li>
+                </ul>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img src="assets/images/online-class/student.png" alt="student" class="img-fluid">
+                  <h2 class="title text-start text-lg-end">Benefits to students</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits overflow-hidden d-block d-lg-none">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-8 teacher">
@@ -230,6 +281,7 @@
       </div>
     </div>
   </section>
+
   <!-- all codes for ===***footer***=== starts from here -->
   <footer class="footer position-relative">
     <img class="ms-5 d-none d-md-block position-absolute top-0 start-0" src="assets/images/aaqd.png" alt="s">
@@ -284,7 +336,7 @@
   <!-- all scripts are starts from here -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="assets/vendor/Swiper-slider/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/custom2.js"></script>
   <!-- .........script ended............. -->
 </body>
 

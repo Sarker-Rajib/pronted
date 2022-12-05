@@ -330,7 +330,7 @@ body {
 }
 @media (max-width: 768px) {
   .banner .main-content .feature ul li {
-    font-size: 18px;
+    font-size: 16px;
     top: 10px;
   }
 }
@@ -1213,9 +1213,19 @@ body {
   height: 100%;
   padding-bottom: 220px;
 }
+@media (max-width: 1400px) {
+  .our-team .left .swiper {
+    padding-bottom: 150px;
+  }
+}
 @media (max-width: 768px) {
   .our-team .left .swiper {
     padding-bottom: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .our-team .left .swiper {
+    padding-bottom: 180px;
   }
 }
 .our-team .left .swiper .swiper-slide {
@@ -1296,7 +1306,19 @@ body {
   color: #fff;
   padding: 10px;
 }
+@media (max-width: 1400px) {
+  .our-team .left .swiper .swiper-button-next {
+    top: 480px;
+  }
+}
 @media (max-width: 450px) {
+  .our-team .left .swiper .swiper-button-next {
+    left: calc(50% + 20px);
+    transform: translateX(-50%);
+    top: 460px;
+  }
+}
+@media (max-width: 390px) {
   .our-team .left .swiper .swiper-button-next {
     left: calc(50% + 20px);
     transform: translateX(-50%);
@@ -1311,7 +1333,19 @@ body {
   color: #fff;
   padding: 10px;
 }
-@media (max-width: 380px) {
+@media (max-width: 1400px) {
+  .our-team .left .swiper .swiper-button-prev {
+    top: 480px;
+  }
+}
+@media (max-width: 450px) {
+  .our-team .left .swiper .swiper-button-prev {
+    left: calc(50% - 20px);
+    transform: translateX(-50%);
+    top: 460px;
+  }
+}
+@media (max-width: 390px) {
   .our-team .left .swiper .swiper-button-prev {
     left: calc(50% - 20px);
     transform: translateX(-50%);
@@ -1447,6 +1481,16 @@ body {
     padding: 30px;
   }
 }
+@media (max-width: 767px) {
+  .current-positions .content-card .accordion-body {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  .current-positions .content-card .accordion-button {
+    padding: 10px 0;
+  }
+}
 .current-positions .content-card .main-heading {
   font-size: 30px;
   font-weight: 900;
@@ -1495,7 +1539,7 @@ body {
 }
 @media (max-width: 767px) {
   .current-positions .content-card ul li {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 .current-positions .content-card ul li::before {
@@ -1506,11 +1550,6 @@ body {
   height: 5px;
   width: 10px;
   background: url(../images/online-class/y-.png);
-}
-@media (max-width: 768px) {
-  .current-positions .content-card ul li {
-    font-size: 18px;
-  }
 }
 .current-positions .po1 {
   position: absolute;

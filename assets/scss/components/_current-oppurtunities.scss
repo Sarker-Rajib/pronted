@@ -8,13 +8,13 @@
         padding-top: 60px;
     }
 
-    .accordion{
-        .accordion-button{
+    .accordion {
+        .accordion-button {
             background: rgba(0, 0, 0, 0);
             color: var(--secondary);
             font-size: 20px;
 
-            &.collapsed{
+            &.collapsed {
                 color: rgba(151, 151, 151, 0.863);
             }
         }
@@ -28,6 +28,18 @@
 
         @media(max-width: 767px) {
             padding: 30px;
+        }
+
+        .accordion-body {
+            @media(max-width: 767px) {
+                padding: 10px 0;
+            }
+        }
+
+        .accordion-button {
+            @media(max-width: 767px) {
+                padding: 10px 0;
+            }
         }
 
         .main-heading {
@@ -78,7 +90,7 @@
                 margin-bottom: 5px;
 
                 @media(max-width: 767px) {
-                    font-size: 14px;
+                    font-size: 15px;
                 }
 
                 &::before {
@@ -90,33 +102,32 @@
                     width: 10px;
                     background: url(../images/online-class/y-.png);
                 }
-
-                @media(max-width: 768px) {
-                    font-size: 18px;
-                }
             }
         }
     }
 
-    .po1{
+    .po1 {
         position: absolute;
         top: 10px;
         left: 0;
         z-index: -9;
     }
-    .po2{
+
+    .po2 {
         position: absolute;
         top: 40%;
         right: 50px;
         z-index: -22;
     }
-    .po3{
+
+    .po3 {
         position: absolute;
         top: 40%;
         left: -50px;
         z-index: -99;
     }
-    .po4{
+
+    .po4 {
         position: absolute;
         top: 0px;
         right: -50px;

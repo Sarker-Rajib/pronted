@@ -38,8 +38,16 @@
             height: 100%;
             padding-bottom: 220px;
 
+            @media(max-width: 1400px) {
+                padding-bottom: 150px;
+            }
+
             @media(max-width: 768px) {
                 padding-bottom: 150px;
+            }
+
+            @media(max-width: 768px) {
+                padding-bottom: 180px;
             }
 
             .swiper-slide {
@@ -129,9 +137,18 @@
                 color: #fff;
                 padding: 10px;
 
-               
+
+                @media(max-width: 1400px) {
+                    top: 480px;
+                }
 
                 @media(max-width: 450px) {
+                    left: calc(50% + 20px);
+                    transform: translateX(-50%);
+                    top: 460px;
+                }
+
+                @media(max-width: 390px) {
                     left: calc(50% + 20px);
                     transform: translateX(-50%);
                     top: 420px;
@@ -147,7 +164,17 @@
                 padding: 10px;
 
                 
-                @media(max-width: 380px) {
+                @media(max-width: 1400px) {
+                    top: 480px;
+                }
+
+                @media(max-width: 450px) {
+                    left: calc(50% - 20px);
+                    transform: translateX(-50%);
+                    top: 460px;
+                }
+
+                @media(max-width: 390px) {
                     left: calc(50% - 20px);
                     transform: translateX(-50%);
                     top: 420px;

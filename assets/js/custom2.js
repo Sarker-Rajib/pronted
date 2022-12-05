@@ -3,7 +3,7 @@ const studentBenefits = document.getElementById("student-benefits");
 const teacherContent = document.getElementById("techer-content");
 const teacherBenefits = document.getElementById("techer-benefits");
 
-console.log(studentContent, studentBenefits, teacherContent, teacherBenefits);
+// console.log(studentContent, studentBenefits, teacherContent, teacherBenefits);
 
 studentContent.addEventListener(
     "mouseover",

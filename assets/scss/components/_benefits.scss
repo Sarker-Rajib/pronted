@@ -6,11 +6,11 @@
         padding: 50px 0;
     }
 
-    .benefit-container{
-        max-height: 900px;
+    .benefit-container {
+        max-height: 920px;
         overflow: hidden;
 
-        @media(max-width: 1400px){
+        @media(max-width: 1400px) {
             max-height: 830px;
         }
     }
@@ -18,6 +18,23 @@
     .teacher {
         background: var(--sky-blue);
         padding: 120px;
+        position: relative;
+
+        .arrow-1 {
+            position: absolute;
+            left: 40px;
+        }
+
+        .arrow-2 {
+            position: absolute;
+            bottom: 30px;
+        }
+
+        .dots {
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+        }
 
         &.teacher-desktop {
             transition: all 0.5s ease-in-out;
@@ -52,6 +69,12 @@
 
         .student-profit {
             display: none;
+        }
+
+        .arrow-3{
+            position: absolute;
+            top: 10%;
+            left: 10%;
         }
     }
 

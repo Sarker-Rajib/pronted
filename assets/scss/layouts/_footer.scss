@@ -36,7 +36,7 @@
         font-size: 22px;
         font-weight: 700;
         line-height: 1.2;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
 
     .input-group {
@@ -83,6 +83,20 @@
                     margin-top: 3px;
                     font-size: 18px;
                 }
+            }
+        }
+    }
+
+    .navs{
+        a{
+            display: block;
+            color: #fff;
+            margin-bottom: 5px;
+
+            &:hover{
+                background: #fff;
+                color: var(--primary);
+                padding-left: 5px;
             }
         }
     }

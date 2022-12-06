@@ -1198,6 +1198,15 @@ body {
   color: #fff;
   background: rgba(128, 156, 184, 0.829);
 }
+.landmark-section .landmark-mobile .swiper-slide p {
+  font-size: 12px;
+}
+.landmark-section .landmark-mobile .swiper-slide .year {
+  margin-top: 20px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+}
 .landmark-section .landmark-mobile .swiper-slide-active {
   background: #0024cb;
 }

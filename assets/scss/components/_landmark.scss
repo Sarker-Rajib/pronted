@@ -102,11 +102,21 @@
             font-weight: bold;
             color: #fff;
             background: rgba(128, 156, 184, 0.829);
+
+            p{
+                font-size: 12px;
+            }
+
+            .year{
+                margin-top: 20px;
+                border-top: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                text-align: center;
+            }
         }
         
         .swiper-slide-active{
             background: #0024cb;
-        }
-          
+        }     
     }
 }

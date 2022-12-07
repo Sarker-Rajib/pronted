@@ -57,6 +57,12 @@
                             @media(max-width: 768px){
                                 padding: 5px;
                             }
+
+                            
+                            &.active{
+                                background: var(--primary);
+                                color: #fff;
+                            }
                         }
                     }
                 }

@@ -161,6 +161,10 @@ body {
     padding: 5px;
   }
 }
+.header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item.active {
+  background: var(--primary);
+  color: #fff;
+}
 
 .banner {
   position: relative;
@@ -1601,6 +1605,11 @@ body {
   height: 5px;
   width: 10px;
   background: url(../images/online-class/y-.png);
+}
+@media (max-width: 767px) {
+  .current-positions .content-card ul li::before {
+    top: 9px;
+  }
 }
 .current-positions .po1 {
   position: absolute;

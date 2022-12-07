@@ -101,6 +101,10 @@
                     height: 5px;
                     width: 10px;
                     background: url(../images/online-class/y-.png);
+
+                    @media(max-width: 767px) {
+                        top: 9px;
+                    }
                 }
             }
         }

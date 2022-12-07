@@ -111,7 +111,7 @@ body {
 /*=== layouts css start === */
 .header {
   padding: 10px 0;
-  z-index: 999;
+  z-index: 100000000000000030000000;
 }
 @media (max-width: 768px) {
   .header .navbar .navbar-brand {
@@ -122,7 +122,7 @@ body {
   padding: 10px;
   font-size: 18px;
   font-weight: 500;
-  color: #0024cb;
+  color: var(--primary);
   text-decoration: none;
   border-radius: 25px;
   padding: 0.6vw 1.4vw;
@@ -153,7 +153,7 @@ body {
   overflow: hidden;
 }
 .header .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
-  background: rgba(17, 15, 153, 0.829);
+  background: var(--primary);
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -1162,12 +1162,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.landmark-section #detail-2020 {
+.landmark-section #detail-2017 {
   visibility: visible;
 }
-.landmark-section #detail-2017,
 .landmark-section #detail-2018,
 .landmark-section #detail-2019,
+.landmark-section #detail-2020,
 .landmark-section #detail-2021,
 .landmark-section #detail-2022 {
   visibility: hidden;
@@ -1185,10 +1185,11 @@ body {
   border-style: solid;
 }
 .landmark-section .landmark-mobile .swiper {
-  width: 240px;
-  height: 320px;
+  width: 260px;
+  height: 250px;
 }
 .landmark-section .landmark-mobile .swiper-slide {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1196,19 +1197,31 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  background: rgba(128, 156, 184, 0.829);
+  background: rgba(128, 156, 184, 0.712);
 }
-.landmark-section .landmark-mobile .swiper-slide p {
+.landmark-section .landmark-mobile .swiper-slide .s-parent {
+  padding-bottom: 40px;
+  position: relative;
+}
+.landmark-section .landmark-mobile .swiper-slide .s-parent p {
   font-size: 12px;
+  display: none;
 }
-.landmark-section .landmark-mobile .swiper-slide .year {
-  margin-top: 20px;
+.landmark-section .landmark-mobile .swiper-slide .s-parent .year {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   text-align: center;
+  display: block;
 }
 .landmark-section .landmark-mobile .swiper-slide-active {
   background: #0024cb;
+  width: 180px !important;
+}
+.landmark-section .landmark-mobile .swiper-slide-active .s-parent p {
+  display: block;
+}
+.landmark-section .landmark-mobile .swiper-slide-active .s-parent .year {
+  margin-top: 30px;
 }
 
 .our-team {
@@ -1323,7 +1336,7 @@ body {
   z-index: 999;
   background: var(--sky-blue);
   color: #fff;
-  padding: 10px;
+  padding: 10px 20px;
 }
 @media (max-width: 1400px) {
   .our-team .left .swiper .swiper-button-next {
@@ -1332,14 +1345,14 @@ body {
 }
 @media (max-width: 450px) {
   .our-team .left .swiper .swiper-button-next {
-    left: calc(50% + 20px);
+    left: calc(50% + 30px);
     transform: translateX(-50%);
-    top: 460px;
+    top: 470px;
   }
 }
 @media (max-width: 390px) {
   .our-team .left .swiper .swiper-button-next {
-    left: calc(50% + 20px);
+    left: calc(50% + 30px);
     transform: translateX(-50%);
     top: 420px;
   }
@@ -1350,7 +1363,7 @@ body {
   z-index: 999;
   background: var(--sky-blue);
   color: #fff;
-  padding: 10px;
+  padding: 10px 20px;
 }
 @media (max-width: 1400px) {
   .our-team .left .swiper .swiper-button-prev {
@@ -1359,14 +1372,14 @@ body {
 }
 @media (max-width: 450px) {
   .our-team .left .swiper .swiper-button-prev {
-    left: calc(50% - 20px);
+    left: calc(50% - 30px);
     transform: translateX(-50%);
-    top: 460px;
+    top: 470px;
   }
 }
 @media (max-width: 390px) {
   .our-team .left .swiper .swiper-button-prev {
-    left: calc(50% - 20px);
+    left: calc(50% - 30px);
     transform: translateX(-50%);
     top: 420px;
   }
@@ -1662,7 +1675,7 @@ body {
 @media (max-width: 767px) {
   .testimonial .slider-parent .left .swiper .swiper-slide .testimonial-card {
     padding: 20px;
-    min-height: 220px;
+    min-height: 250px;
   }
 }
 .testimonial .slider-parent .left .swiper .swiper-slide .testimonial-card p {
@@ -1702,16 +1715,15 @@ body {
 }
 .testimonial .slider-parent .left .swiper .swiper-button-next {
   top: 400px;
-  left: 50px;
+  left: 60px;
   z-index: 999;
   background: var(--sky-blue);
   color: #fff;
-  padding: 10px;
-  height: 35px;
+  padding: 10px 20px;
 }
 @media (max-width: 420px) {
   .testimonial .slider-parent .left .swiper .swiper-button-next {
-    left: calc(50% + 20px);
+    left: calc(50% + 30px);
     transform: translateX(-50%);
     top: 300px;
   }
@@ -1722,12 +1734,11 @@ body {
   z-index: 999;
   background: var(--sky-blue);
   color: #fff;
-  padding: 10px;
-  height: 35px;
+  padding: 10px 20px;
 }
 @media (max-width: 420px) {
   .testimonial .slider-parent .left .swiper .swiper-button-prev {
-    left: calc(50% - 20px);
+    left: calc(50% - 30px);
     transform: translateX(-50%);
     top: 300px;
   }

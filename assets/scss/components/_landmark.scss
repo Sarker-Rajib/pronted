@@ -1,6 +1,7 @@
 .landmark-section {
     padding-top: 80px;
-    @media(max-width: 768px){
+
+    @media(max-width: 768px) {
         padding-top: 50px;
     }
 
@@ -29,8 +30,8 @@
         justify-content: end;
         position: relative;
 
-        &:hover{            
-            @media(max-width: 768px){
+        &:hover {
+            @media(max-width: 768px) {
                 position: absolute;
                 width: 280px;
                 top: 0;
@@ -60,13 +61,13 @@
         justify-content: space-between;
     }
 
-    #detail-2020 {
+    #detail-2017 {
         visibility: visible;
     }
 
-    #detail-2017,
     #detail-2018,
     #detail-2019,
+    #detail-2020,
     #detail-2021,
     #detail-2022 {
         visibility: hidden;
@@ -86,14 +87,16 @@
         border-style: solid;
     }
 
-    .landmark-mobile{
-        
+    .landmark-mobile {
+
         .swiper {
-            width: 240px;
-            height: 320px;
+            width: 260px;
+            height: 250px;
         }
 
         .swiper-slide {
+            // width: 100%;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -101,22 +104,41 @@
             font-size: 22px;
             font-weight: bold;
             color: #fff;
-            background: rgba(128, 156, 184, 0.829);
+            background: rgba(128, 156, 184, 0.712);
 
-            p{
-                font-size: 12px;
+            .s-parent {
+                // width: 100%;
+                padding-bottom: 40px;
+                position: relative;
+
+                p {
+                    font-size: 12px;
+                    display: none;
+                }
+
+                .year {
+                    border-top: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    text-align: center;
+                    display: block;
+                }
             }
 
-            .year{
-                margin-top: 20px;
-                border-top: 2px solid #fff;
-                border-bottom: 2px solid #fff;
-                text-align: center;
+        }
+
+        .swiper-slide-active {
+            background: #0024cb;
+            width: 180px !important;
+
+            .s-parent {
+                p {
+                    display: block;
+                }
+
+                .year {
+                    margin-top: 30px;
+                }
             }
         }
-        
-        .swiper-slide-active{
-            background: #0024cb;
-        }     
     }
 }

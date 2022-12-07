@@ -135,7 +135,7 @@
                 z-index: 999;
                 background: var(--sky-blue);
                 color: #fff;
-                padding: 10px;
+                padding: 10px 20px;
 
 
                 @media(max-width: 1400px) {
@@ -143,13 +143,13 @@
                 }
 
                 @media(max-width: 450px) {
-                    left: calc(50% + 20px);
+                    left: calc(50% + 30px);
                     transform: translateX(-50%);
-                    top: 460px;
+                    top: 470px;
                 }
 
                 @media(max-width: 390px) {
-                    left: calc(50% + 20px);
+                    left: calc(50% + 30px);
                     transform: translateX(-50%);
                     top: 420px;
                 }
@@ -161,21 +161,20 @@
                 z-index: 999;
                 background: var(--sky-blue);
                 color: #fff;
-                padding: 10px;
-
+                padding: 10px 20px;
                 
                 @media(max-width: 1400px) {
                     top: 480px;
                 }
 
                 @media(max-width: 450px) {
-                    left: calc(50% - 20px);
+                    left: calc(50% - 30px);
                     transform: translateX(-50%);
-                    top: 460px;
+                    top: 470px;
                 }
 
                 @media(max-width: 390px) {
-                    left: calc(50% - 20px);
+                    left: calc(50% - 30px);
                     transform: translateX(-50%);
                     top: 420px;
                 }

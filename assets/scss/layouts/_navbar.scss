@@ -1,6 +1,6 @@
 .header {
     padding: 10px 0;
-    z-index: 999;
+    z-index: 99999999999999999999999;
 
     .navbar {
 
@@ -16,7 +16,7 @@
                     padding: 10px;
                     font-size: 18px;
                     font-weight: 500;
-                    color: #0024cb;
+                    color: var(--primary);
                     text-decoration: none;
                     border-radius: 25px;
                     padding: 0.6vw 1.4vw;
@@ -50,7 +50,7 @@
                             overflow: hidden;
 
                             &:hover{
-                                background: rgba(17, 15, 153, 0.829);
+                                background: var(--primary);
                                 color: #fff;
                             }
 

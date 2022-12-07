@@ -24,69 +24,82 @@ const landmarkYears = document.querySelectorAll(".landmark-year-block");
 landmarkYear2017.addEventListener(
   "mouseover", function handleMouseOver() {
     detail2017.style.visibility = "visible";
+    detail2018.style.visibility = "hidden";
+    detail2019.style.visibility = "hidden";
+    detail2020.style.visibility = "hidden";
+    detail2021.style.visibility = "hidden";
+    detail2022.style.visibility = "hidden";
   }
 );
-// Hide DIV on mouse out
-landmarkYear2017.addEventListener("mouseout", function handleMouseOut() {
-  detail2017.style.visibility = "hidden";
-});
+
 
 // Show hidden DIV on hover
 landmarkYear2018.addEventListener(
   "mouseover",
   function handleMouseOver() {
+    detail2017.style.visibility = "hidden";
     detail2018.style.visibility = "visible";
+    detail2019.style.visibility = "hidden";
+    detail2020.style.visibility = "hidden";
+    detail2021.style.visibility = "hidden";
+    detail2022.style.visibility = "hidden";
   }
 );
-// Hide DIV on mouse out
-landmarkYear2018.addEventListener("mouseout", function handleMouseOut() {
-  detail2018.style.visibility = "hidden";
-});
+
 
 // Show hidden DIV on hover
 landmarkYear2019.addEventListener(
   "mouseover",
   function handleMouseOver() {
+    detail2017.style.visibility = "hidden";
+    detail2018.style.visibility = "hidden";
     detail2019.style.visibility = "visible";
+    detail2020.style.visibility = "hidden";
+    detail2021.style.visibility = "hidden";
+    detail2022.style.visibility = "hidden";
   }
 );
-// Hide DIV on mouse out
-landmarkYear2019.addEventListener("mouseout", function handleMouseOut() {
-  detail2019.style.visibility = "hidden";
-});
 
 // Show hidden DIV on hover
 landmarkYear2020.addEventListener(
   "mouseover",
   function handleMouseOver() {
+    detail2017.style.visibility = "hidden";
+    detail2018.style.visibility = "hidden";
+    detail2019.style.visibility = "hidden";
     detail2020.style.visibility = "visible";
+    detail2021.style.visibility = "hidden";
+    detail2022.style.visibility = "hidden";
   }
 );
-// Hide DIV on mouse out
-landmarkYear2020.addEventListener("mouseout", function handleMouseOut() {
-  detail2020.style.visibility = "hidden";
-});
+
 
 // Show hidden DIV on hover
 landmarkYear2021.addEventListener(
   "mouseover",
   function handleMouseOver() {
+    detail2017.style.visibility = "hidden";
+    detail2018.style.visibility = "hidden";
+    detail2019.style.visibility = "hidden";
+    detail2020.style.visibility = "hidden";
     detail2021.style.visibility = "visible";
+    detail2022.style.visibility = "hidden";
   }
 );
 // Hide DIV on mouse out
-landmarkYear2021.addEventListener("mouseout", function handleMouseOut() {
-  detail2021.style.visibility = "hidden";
-});
+// landmarkYear2021.addEventListener("mouseout", function handleMouseOut() {
+//   detail2021.style.visibility = "hidden";
+// });
 
 // Show hidden DIV on hover
 landmarkYear2022.addEventListener(
   "mouseover",
   function handleMouseOver() {
+    detail2017.style.visibility = "hidden";
+    detail2018.style.visibility = "hidden";
+    detail2019.style.visibility = "hidden";
+    detail2020.style.visibility = "hidden";
+    detail2021.style.visibility = "hidden";
     detail2022.style.visibility = "visible";
   }
 );
-// Hide DIV on mouse out
-landmarkYear2022.addEventListener("mouseout", function handleMouseOut() {
-  detail2022.style.visibility = "hidden";
-});

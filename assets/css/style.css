@@ -338,6 +338,79 @@ body {
     top: 10px;
   }
 }
+.banner .main-content .online-store-parents {
+  padding-top: 100px;
+}
+@media (max-width: 767px) {
+  .banner .main-content .online-store-parents {
+    padding-top: 50px;
+  }
+}
+.banner .main-content .online-store-parents h2 {
+  font-size: 65px;
+  line-height: 0.9;
+  color: var(--primary);
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+.banner .main-content .online-store-parents h2 span {
+  color: var(--secondary);
+}
+@media (max-width: 767px) {
+  .banner .main-content .online-store-parents h2 {
+    font-size: 30px;
+    line-height: 42px;
+    padding-bottom: 25px;
+  }
+}
+.banner .main-content .online-store-parents h5 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .banner .main-content .online-store-parents h5 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+}
+.banner .main-content .online-store-parents ul {
+  padding: 0;
+  padding-left: 20px;
+  padding-bottom: 60px;
+}
+.banner .main-content .online-store-parents ul li {
+  font-size: 22px;
+  position: relative;
+}
+.banner .main-content .online-store-parents ul li::before {
+  content: " ";
+  position: absolute;
+  left: -20px;
+  top: 15px;
+  height: 5px;
+  width: 10px;
+  background: url(../images/online-class/y-.png);
+}
+@media (max-width: 768px) {
+  .banner .main-content .online-store-parents ul li::before {
+    top: 11px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .main-content .online-store-parents ul li {
+    font-size: 18px;
+  }
+}
+.banner .main-content .benefit {
+  padding-bottom: 200px;
+}
+@media (max-width: 1400px) {
+  .banner .main-content .benefit {
+    padding-bottom: 150px;
+  }
+}
 .banner .home-section-1-c1 {
   position: absolute;
   top: 13.02vw;
@@ -444,6 +517,12 @@ body {
   z-index: -9;
   bottom: -30px;
   right: 10%;
+}
+.banner .bg-obj {
+  position: absolute;
+  z-index: -9;
+  bottom: -30px;
+  right: 0;
 }
 
 .banner-2 {
@@ -1393,9 +1472,15 @@ body {
   padding: 100px 0;
   color: #ffffff;
 }
+.benefits.online-store {
+  padding: 0 0 50px 0;
+}
 @media (max-width: 768px) {
   .benefits {
     padding: 50px 0;
+  }
+  .benefits.online-store {
+    padding: 0 0 50px 0;
   }
 }
 .benefits .benefit-container {
@@ -1428,6 +1513,16 @@ body {
 .benefits .teacher.teacher-desktop {
   transition: all 0.5s ease-in-out;
   width: 70%;
+}
+.benefits .teacher.store .arrow-2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+.benefits .teacher.store .dots {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
 }
 @media (max-width: 768px) {
   .benefits .teacher {
@@ -1465,6 +1560,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   padding-top: 40px;
+  white-space: nowrap;
 }
 @media (max-width: 1400px) {
   .benefits .title {

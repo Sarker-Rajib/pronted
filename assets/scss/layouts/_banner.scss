@@ -185,6 +185,82 @@
                 }
             }
         }
+
+        .online-store-parents {
+            padding-top: 100px;
+
+            @media(max-width: 767px) {
+                padding-top: 50px;
+            }
+
+            h2 {
+                font-size: 65px;
+                line-height: 0.9;
+                color: var(--primary);
+                font-weight: 900;
+                text-transform: uppercase;
+                padding-bottom: 50px;
+
+                span {
+                    color: var(--secondary);
+                }
+
+                @media(max-width: 767px) {
+                    font-size: 30px;
+                    line-height: 42px;
+                    padding-bottom: 25px;
+                }
+            }
+
+            h5 {
+                font-size: 30px;
+                font-weight: 700;
+                padding-bottom: 20px;
+
+                @media(max-width: 767px) {
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            ul {
+                padding: 0;
+                padding-left: 20px;
+                padding-bottom: 60px;
+
+                li {
+                    font-size: 22px;
+                    position: relative;
+
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        left: -20px;
+                        top: 15px;
+                        height: 5px;
+                        width: 10px;
+                        background: url(../images/online-class/y-.png);
+
+
+                        @media(max-width: 768px) {
+                            top: 11px;
+                        }
+                    }
+
+                    @media(max-width: 768px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .benefit {
+            padding-bottom: 200px;
+
+            @media(max-width: 1400px) {
+                padding-bottom: 150px;
+            }
+        }
     }
 
 
@@ -291,11 +367,18 @@
         top: 40%;
         right: -20px;
     }
- 
+
     .dots2 {
         position: absolute;
         z-index: -9;
         bottom: -30px;
         right: 10%;
+    }
+
+    .bg-obj {
+        position: absolute;
+        z-index: -9;
+        bottom: -30px;
+        right: 0;
     }
 }

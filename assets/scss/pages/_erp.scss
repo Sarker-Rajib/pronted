@@ -51,15 +51,84 @@
             }
 
         }
+
+        .shape-1 {
+            position: absolute;
+            top: 100px;
+            left: 0;
+
+            @media(max-width: 767px) {
+                max-width: 50px;
+            }
+        }
+
+        .shape-2 {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            max-width: 400px;
+
+            @media(max-width: 767px) {
+                max-width: 150px;
+            }
+        }
+
+        .shape-3 {
+            position: absolute;
+            top: 80%;
+            left: 20%;
+
+            @media(max-width: 767px) {
+                top: 80%;
+                left: 5%;
+            }
+        }
+
+        .shape-4 {
+            position: absolute;
+            top: 18%;
+            right: 40%;
+
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+
+        .shape-5 {
+            position: absolute;
+            top: 90%;
+            right: 0;
+        }
     }
 
     .erp-details {
+        padding-bottom: 100px;
+        position: relative;
+
+        @media(max-width: 767px) {
+            padding-bottom: 50px;
+        }
+
+        .container {
+            @media(min-width: 1350px) {
+                max-width: 1120px;
+            }
+        }
+
         .accordio-n {
             margin: 30px auto;
             font-family: tahoma;
             box-shadow: 0px 5px 30px -10px rgb(0 0 0 / 50%);
             border-radius: 20px;
             padding: 30px;
+            padding-bottom: 50px;
+            position: relative;
+            background: #fff;
+
+            @media(max-width: 767px) {
+                padding: 10px;
+                padding-bottom: 30px;
+            }
 
             .accordion-item {
                 border: none;
@@ -69,6 +138,8 @@
 
                     .accordion-button {
                         border-bottom: 2px solid #f5f4f4;
+                        font-size: 16px;
+                        font-weight: 900;
 
                         &:focus {
                             box-shadow: none;
@@ -80,24 +151,183 @@
                         }
 
                         img {
-                            max-width: 40px;
+                            max-width: 50px;
+                            margin-right: 20px;
                         }
                     }
                 }
+
+                .accordion-body {
+                    @media(max-width: 767px) {
+                        padding: 5px 10px 5px 5px;
+                    }
+
+                    ul {
+                        list-style: circle;
+
+                        li {
+                            list-style: disc;
+                            font-size: 16px;
+                            margin-bottom: 8px;
+
+                            &:last-child {
+                                padding-bottom: 15px;
+                            }
+                        }
+                    }
+
+                    h6 {
+                        font-size: 15px;
+                        font-weight: 700;
+                        padding-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
             }
+        }
+
+        .shape-6 {
+            position: absolute;
+            left: 0;
+            top: 10%;
+            z-index: -9;
+            max-width: 600px;
+        }
+
+        .shape-7 {
+            position: absolute;
+            bottom: 200px;
+            right: 20px;
+            z-index: -9;
+        }
+
+        .shape-8 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -9;
         }
     }
 
 
     .smart-teacher-parent {
-        .carousel {
-            position: relative;
-            padding-bottom: 50px;
+        .container {
+            @media(min-width: 1350px) {
+                max-width: 1120px;
+            }
+        }
 
-            .carousel-indicators {
+        .nav {
+            &.nav-tabs {
+                .nav-link {
+                    color: #000;
+                    font-weight: 700;
+                    padding: 10px 25px;
+                    margin-right: 0px;
+                    border: 2px solid #0025cb00;
+                    border-top-right-radius: 15px;
+                    border-top-left-radius: 15px;
+                    background-color: #eeeeed;
+                    margin-bottom: -3px;
+
+                    &.active {
+                        border-right: 2px solid #0024cb;
+                        border-top: 2px solid #0024cb;
+                        border-left: 2px solid #0024cb;
+                    }
+
+                    @media(max-width: 767px) {
+                        font-size: 14px;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            padding: 50px;
+            border: 2px solid #0024cb;
+            background-color: #fff;
+            border-radius: 0px 15px 15px 15px;
+            overflow: hidden;
+
+            @media(max-width: 767px) {
+                padding: 20px;
+            }
+
+            .carousel {
+                position: relative;
+                padding-bottom: 50px;
+
+                .carousel-inner {
+                    min-height: 160px;
+
+                    @media(max-width: 767px) {
+                        min-height: 230px;
+                    }
+
+                    h3 {
+                        font-size: 28px;
+                        font-weight: bold;
+                        color: #000000;
+
+                        @media(max-width: 767px) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: #959595;
+
+
+                        @media(max-width: 767px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .number {
+                        font-size: 100px;
+                        line-height: .85;
+
+                        @media(max-width: 767px) {
+                            font-size: 80px;
+                        }
+                    }
+                }
+
+                .carousel-indicators {
+                    position: absolute;
+                    bottom: 0px;
+                    z-index: 99;
+                }
+
+                @media(max-width: 767px) {
+                    margin-top: 30px;
+                }
+            }
+
+            .shape-9 {
                 position: absolute;
-                bottom: 0px;
-                z-index: 99;
+                left: 10px;
+                bottom: 30px;
+
+                @media(max-width: 767px) {
+                    left: -20px;
+                }
+            }
+            .shape-10 {
+                position: absolute;
+                right: 10px;
+                top: 30px;
+
+                @media(max-width: 767px) {
+                    right: -45px
+                }
             }
         }
     }

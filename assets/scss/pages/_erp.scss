@@ -1,0 +1,104 @@
+.erp {
+    .banner-erp {
+        position: relative;
+
+        .main-content {
+            padding-top: 200px;
+            padding-bottom: 50px;
+
+            @media(max-width: 1400px) {
+                padding-top: 120px;
+            }
+
+            @media(max-width: 767px) {
+                padding-top: 100px;
+            }
+
+            .banner-title {
+                font-size: 65px;
+                line-height: 0.9;
+                color: var(--sky-blue);
+                font-weight: 700;
+                text-transform: uppercase;
+
+                span {
+                    color: var(--tertiary);
+                }
+
+                .time {
+                    color: var(--secondary);
+                }
+
+                @media(max-width: 1400px) {
+                    font-size: 50px;
+                }
+
+                @media(max-width: 767px) {
+                    font-size: 40px;
+                    line-height: 42px;
+                }
+            }
+
+            p {
+                padding-top: 30px;
+                font-size: 25px;
+                line-height: 1.2;
+                font-weight: 700;
+
+                @media(max-width: 767px) {
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+
+    .erp-details {
+        .accordio-n {
+            margin: 30px auto;
+            font-family: tahoma;
+            box-shadow: 0px 5px 30px -10px rgb(0 0 0 / 50%);
+            border-radius: 20px;
+            padding: 30px;
+
+            .accordion-item {
+                border: none;
+
+                .accordion-header {
+                    // border-bottom: 1px solid rgb(189, 34, 34);
+
+                    .accordion-button {
+                        border-bottom: 2px solid #f5f4f4;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+
+                        &:not(.collapsed) {
+                            background: transparent;
+                            color: var(--secondary);
+                        }
+
+                        img {
+                            max-width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .smart-teacher-parent {
+        .carousel {
+            position: relative;
+            padding-bottom: 50px;
+
+            .carousel-indicators {
+                position: absolute;
+                bottom: 0px;
+                z-index: 99;
+            }
+        }
+    }
+}

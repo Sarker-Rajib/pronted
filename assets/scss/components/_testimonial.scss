@@ -10,7 +10,7 @@
         font-weight: 900;
         background: #fff;
         position: relative;
-        z-index: 9999;
+        z-index: 99;
 
         padding-bottom: 40px;
 
@@ -93,7 +93,7 @@
                 .swiper-button-next {
                     top: 400px;
                     left: 60px;
-                    z-index: 999;
+                    z-index: 99;
                     background: var(--sky-blue);
                     color: #fff;
                     padding: 10px 20px;
@@ -108,7 +108,7 @@
                 .swiper-button-prev {
                     top: 400px;
                     left: 10px;
-                    z-index: 999;
+                    z-index: 99;
                     background: var(--sky-blue);
                     color: #fff;
                     padding: 10px 20px;

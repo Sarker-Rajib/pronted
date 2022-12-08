@@ -1,6 +1,6 @@
 .header {
     padding: 10px 0;
-    z-index: 99999999999999999999999;
+    z-index: 888;
 
     .navbar {
 
@@ -12,6 +12,7 @@
 
         .navbar-nav {
             .nav-item {
+                margin-left: 3px;
                 .nav-link {
                     padding: 10px;
                     font-size: 18px;

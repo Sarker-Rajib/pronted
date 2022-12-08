@@ -1,5 +1,21 @@
 @charset "UTF-8";
 /*=== abstracts css start === */
+@font-face {
+  font-family: "tahoma-regular";
+  src: url(../Fonts/Tahoma-Font/TahomaRegular.ttf);
+}
+@font-face {
+  font-family: "tahoma-semibold";
+  src: url(../Fonts/Tahoma-Font/TahomaSemi.TTF);
+}
+@font-face {
+  font-family: "tahoma-bold";
+  src: url(../Fonts/Tahoma-Font/TahomaBold.TTF);
+}
+@font-face {
+  font-family: "tahoma-ex-bold";
+  src: url(../Fonts/Tahoma-Font/TahomaExBd.TTF);
+}
 :root {
   --primary: #0024cb;
   --secondary: #f5b01b;
@@ -2009,6 +2025,7 @@ body {
 .erp .erp-details .accordio-n .accordion-item .accordion-header .accordion-button {
   border-bottom: 2px solid #f5f4f4;
   font-size: 16px;
+  font-family: "tahoma-bold";
   font-weight: 900;
 }
 .erp .erp-details .accordio-n .accordion-item .accordion-header .accordion-button:focus {
@@ -2032,6 +2049,7 @@ body {
 }
 .erp .erp-details .accordio-n .accordion-item .accordion-body ul li {
   list-style: disc;
+  font-family: "tahoma-regular";
   font-size: 16px;
   margin-bottom: 8px;
 }
@@ -2073,7 +2091,7 @@ body {
 }
 .erp .smart-teacher-parent .nav.nav-tabs .nav-link {
   color: #000;
-  font-weight: 700;
+  font-size: 18px;
   padding: 10px 25px;
   margin-right: 0px;
   border: 2px solid rgba(0, 37, 203, 0);
@@ -2081,6 +2099,7 @@ body {
   border-top-left-radius: 15px;
   background-color: #eeeeed;
   margin-bottom: -3px;
+  font-family: "tahoma-semibold";
 }
 .erp .smart-teacher-parent .nav.nav-tabs .nav-link.active {
   border-right: 2px solid #0024cb;
@@ -2119,7 +2138,7 @@ body {
 }
 .erp .smart-teacher-parent .tab-content .carousel .carousel-inner h3 {
   font-size: 28px;
-  font-weight: bold;
+  font-family: "tahoma-regular";
   color: #000000;
 }
 @media (max-width: 767px) {
@@ -2128,6 +2147,7 @@ body {
   }
 }
 .erp .smart-teacher-parent .tab-content .carousel .carousel-inner p {
+  font-family: "tahoma-regular";
   font-size: 16px;
   color: #959595;
 }
@@ -2138,6 +2158,7 @@ body {
 }
 .erp .smart-teacher-parent .tab-content .carousel .carousel-inner .number {
   font-size: 100px;
+  font-family: "tahoma-regular";
   line-height: 0.85;
 }
 @media (max-width: 767px) {

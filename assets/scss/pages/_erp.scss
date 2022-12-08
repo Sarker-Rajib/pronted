@@ -139,6 +139,7 @@
                     .accordion-button {
                         border-bottom: 2px solid #f5f4f4;
                         font-size: 16px;
+                        font-family: 'tahoma-bold';
                         font-weight: 900;
 
                         &:focus {
@@ -167,6 +168,7 @@
 
                         li {
                             list-style: disc;
+                            font-family: 'tahoma-regular';
                             font-size: 16px;
                             margin-bottom: 8px;
 
@@ -225,7 +227,7 @@
             &.nav-tabs {
                 .nav-link {
                     color: #000;
-                    font-weight: 700;
+                    font-size: 18px;
                     padding: 10px 25px;
                     margin-right: 0px;
                     border: 2px solid #0025cb00;
@@ -233,6 +235,8 @@
                     border-top-left-radius: 15px;
                     background-color: #eeeeed;
                     margin-bottom: -3px;
+                    font-family: 'tahoma-semibold',;
+
 
                     &.active {
                         border-right: 2px solid #0024cb;
@@ -272,7 +276,7 @@
 
                     h3 {
                         font-size: 28px;
-                        font-weight: bold;
+                        font-family: 'tahoma-regular';
                         color: #000000;
 
                         @media(max-width: 767px) {
@@ -281,6 +285,7 @@
                     }
 
                     p {
+                        font-family: 'tahoma-regular';
                         font-size: 16px;
                         color: #959595;
 
@@ -292,6 +297,7 @@
 
                     .number {
                         font-size: 100px;
+                        font-family: 'tahoma-regular';
                         line-height: .85;
 
                         @media(max-width: 767px) {
@@ -320,6 +326,7 @@
                     left: -20px;
                 }
             }
+
             .shape-10 {
                 position: absolute;
                 right: 10px;

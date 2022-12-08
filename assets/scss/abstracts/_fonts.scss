@@ -1,1 +1,21 @@
-// font-family: 'Manrope', sans-serif;
+// font-family: 'Manrope', sans-serif
+
+@font-face {
+    font-family: 'tahoma-regular';
+    src: url(../Fonts/Tahoma-Font/TahomaRegular.ttf);
+}
+
+@font-face {
+    font-family: 'tahoma-semibold';
+    src: url(../Fonts/Tahoma-Font/TahomaSemi.TTF);
+}
+
+@font-face {
+    font-family: 'tahoma-bold';
+    src: url(../Fonts/Tahoma-Font/TahomaBold.TTF);
+}
+
+@font-face {
+    font-family: 'tahoma-ex-bold';
+    src: url(../Fonts/Tahoma-Font/TahomaExBd.TTF);
+}

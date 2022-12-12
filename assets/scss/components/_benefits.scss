@@ -14,6 +14,59 @@
         }
     }
 
+    .title {
+        font-size: 60px;
+        font-weight: 700;
+        padding-top: 40px;
+        position: relative;
+        z-index: 888;
+
+        @media(min-width: 1500px) {
+            white-space: nowrap;
+        }
+
+        @media(max-width: 1450px) {
+            font-size: 40px;
+        }
+
+        @media(max-width: 1400px) {
+            font-size: 35px;
+        }
+
+        @media(max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+
+    ul {
+        padding: 0;
+        padding-left: 20px;
+        padding-bottom: 60px;
+        padding-top: 10px;
+
+        li {
+            font-size: 20px;
+            position: relative;
+
+            &::before {
+                content: " ";
+                position: absolute;
+                left: -20px;
+                top: 13px;
+                height: 5px;
+                width: 10px;
+                background: url(../images/online-class/w-.png);
+
+                @media(max-width: 768px) {
+                    top: 11px;
+                }
+            }
+
+            @media(max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
 
 
     .benefit-container {
@@ -27,8 +80,8 @@
 
 
     .image {
-        @media(max-width: 1400px) {
-            max-width: 250px;
+        @media(max-width: 1500px) {
+            max-width: 200px;
         }
 
         @media(max-width: 767px) {
@@ -45,14 +98,23 @@
         padding: 120px;
         position: relative;
 
+        @media(max-width: 1450px) {
+            padding: 60px;
+        }
+
         .arrow-1 {
             position: absolute;
             left: 40px;
+            max-width: 40px;
         }
 
         .arrow-2 {
             position: absolute;
             bottom: 30px;
+
+            @media(max-width: 1440px) {
+                max-width: 40px;
+            }
         }
 
         .dots {
@@ -93,6 +155,10 @@
         background: var(--primary);
         padding: 120px;
 
+        @media(max-width: 1450px) {
+            padding: 60px;
+        }
+
         &.student-desktop {
             width: 30%;
             transition: all 0.5s ease-in-out;
@@ -112,58 +178,8 @@
 
         .arrow-3 {
             position: absolute;
-            top: 10%;
+            top: 8%;
             left: 10%;
-        }
-    }
-
-    .title {
-        font-size: 60px;
-        font-weight: 700;
-        padding-top: 40px;
-
-
-        @media(max-width: 1400px) {
-            font-size: 35px;
-        }
-
-        @media(max-width: 768px) {
-            font-size: 30px;
-        }
-
-
-        @media(min-width: 1200px) {
-            white-space: nowrap;
-        }
-    }
-
-    ul {
-        padding: 0;
-        padding-left: 20px;
-        padding-bottom: 60px;
-        padding-top: 10px;
-
-        li {
-            font-size: 20px;
-            position: relative;
-
-            &::before {
-                content: " ";
-                position: absolute;
-                left: -20px;
-                top: 13px;
-                height: 5px;
-                width: 10px;
-                background: url(../images/online-class/w-.png);
-
-                @media(max-width: 768px) {
-                    top: 11px;
-                }
-            }
-
-            @media(max-width: 768px) {
-                font-size: 16px;
-            }
         }
     }
 }

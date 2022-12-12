@@ -1532,6 +1532,21 @@ body {
     max-height: 830px;
   }
 }
+@media (max-width: 1400px) {
+  .benefits .image {
+    max-width: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .benefits .image {
+    max-width: 200px;
+  }
+}
+@media (min-width: 1500px) {
+  .benefits .image {
+    max-width: 350px;
+  }
+}
 .benefits .teacher {
   background: var(--sky-blue);
   padding: 120px;

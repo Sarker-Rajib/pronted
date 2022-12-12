@@ -5,7 +5,7 @@
     &.online-store {
         padding: 0 0 50px 0;
     }
-    
+
     @media(max-width: 768px) {
         padding: 50px 0;
 
@@ -22,6 +22,21 @@
 
         @media(max-width: 1400px) {
             max-height: 830px;
+        }
+    }
+
+
+    .image {
+        @media(max-width: 1400px) {
+            max-width: 250px;
+        }
+
+        @media(max-width: 767px) {
+            max-width: 200px;
+        }
+
+        @media(min-width: 1500px) {
+            max-width: 350px;
         }
     }
 
@@ -51,13 +66,13 @@
             width: 70%;
         }
 
-        &.store{
+        &.store {
             .arrow-2 {
                 position: absolute;
                 bottom: 0px;
                 left: 0;
             }
-    
+
             .dots {
                 position: absolute;
                 bottom: 40px;
@@ -107,7 +122,7 @@
         font-weight: 700;
         padding-top: 40px;
 
-        
+
         @media(max-width: 1400px) {
             font-size: 35px;
         }
@@ -116,7 +131,7 @@
             font-size: 30px;
         }
 
-               
+
         @media(min-width: 1200px) {
             white-space: nowrap;
         }

@@ -106,14 +106,19 @@
         font-size: 60px;
         font-weight: 700;
         padding-top: 40px;
-        white-space: nowrap;
 
+        
         @media(max-width: 1400px) {
             font-size: 35px;
         }
 
         @media(max-width: 768px) {
             font-size: 30px;
+        }
+
+               
+        @media(min-width: 1200px) {
+            white-space: nowrap;
         }
     }
 

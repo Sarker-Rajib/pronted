@@ -1600,7 +1600,6 @@ body {
   font-size: 60px;
   font-weight: 700;
   padding-top: 40px;
-  white-space: nowrap;
 }
 @media (max-width: 1400px) {
   .benefits .title {
@@ -1610,6 +1609,11 @@ body {
 @media (max-width: 768px) {
   .benefits .title {
     font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .benefits .title {
+    white-space: nowrap;
   }
 }
 .benefits ul {

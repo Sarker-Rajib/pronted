@@ -235,7 +235,7 @@
                     border-top-left-radius: 15px;
                     background-color: #eeeeed;
                     margin-bottom: -3px;
-                    font-family: 'tahoma-semibold',;
+                    font-family: 'tahoma-semibold', ;
 
 
                     &.active {
@@ -265,13 +265,22 @@
 
             .carousel {
                 position: relative;
-                padding-bottom: 50px;
+
+                @media(max-width: 767px) {
+                    padding-bottom: 50px;
+                }
 
                 .carousel-inner {
                     min-height: 160px;
 
                     @media(max-width: 767px) {
-                        min-height: 230px;
+                        min-height: 280px;
+                    }
+
+                    .in-text {
+                        @media(max-width: 767px) {
+                            min-height: 200px;
+                        }
                     }
 
                     h3 {
@@ -310,6 +319,12 @@
                     position: absolute;
                     bottom: 0px;
                     z-index: 99;
+
+                    @media(min-width: 1199px) {
+                        left: 25%;
+                        top: 62%;
+                        transform: translateX(25%);
+                    }
                 }
 
                 @media(max-width: 767px) {

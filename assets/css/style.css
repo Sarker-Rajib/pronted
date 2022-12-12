@@ -2126,14 +2126,23 @@ body {
 }
 .erp .smart-teacher-parent .tab-content .carousel {
   position: relative;
-  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .erp .smart-teacher-parent .tab-content .carousel {
+    padding-bottom: 50px;
+  }
 }
 .erp .smart-teacher-parent .tab-content .carousel .carousel-inner {
   min-height: 160px;
 }
 @media (max-width: 767px) {
   .erp .smart-teacher-parent .tab-content .carousel .carousel-inner {
-    min-height: 230px;
+    min-height: 280px;
+  }
+}
+@media (max-width: 767px) {
+  .erp .smart-teacher-parent .tab-content .carousel .carousel-inner .in-text {
+    min-height: 200px;
   }
 }
 .erp .smart-teacher-parent .tab-content .carousel .carousel-inner h3 {
@@ -2170,6 +2179,13 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 99;
+}
+@media (min-width: 1199px) {
+  .erp .smart-teacher-parent .tab-content .carousel .carousel-indicators {
+    left: 25%;
+    top: 62%;
+    transform: translateX(25%);
+  }
 }
 @media (max-width: 767px) {
   .erp .smart-teacher-parent .tab-content .carousel {

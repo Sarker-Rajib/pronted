@@ -2081,6 +2081,9 @@ body {
   max-width: 50px;
   margin-right: 20px;
 }
+.erp .erp-details .accordio-n .accordion-item .accordion-header .accordion-button.last {
+  border-bottom: none;
+}
 @media (max-width: 767px) {
   .erp .erp-details .accordio-n .accordion-item .accordion-body {
     padding: 5px 10px 5px 5px;
@@ -2126,6 +2129,17 @@ body {
   bottom: 0;
   z-index: -9;
 }
+.erp .smart-teacher-parent .red {
+  right: 0;
+  top: 20%;
+  z-index: -6;
+}
+@media (max-width: 767px) {
+  .erp .smart-teacher-parent .red {
+    top: 74%;
+    max-width: 150px;
+  }
+}
 @media (min-width: 1350px) {
   .erp .smart-teacher-parent .container {
     max-width: 1120px;
@@ -2134,19 +2148,22 @@ body {
 .erp .smart-teacher-parent .nav.nav-tabs .nav-link {
   color: #000;
   font-size: 18px;
+  font-weight: 900;
   padding: 10px 25px;
   margin-right: 0px;
   border: 2px solid rgba(0, 37, 203, 0);
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   background-color: #eeeeed;
-  margin-bottom: -3px;
-  font-family: "tahoma-semibold";
+  border-bottom: 2px solid #0024cb;
+  margin-bottom: -2.5px;
 }
 .erp .smart-teacher-parent .nav.nav-tabs .nav-link.active {
   border-right: 2px solid #0024cb;
   border-top: 2px solid #0024cb;
   border-left: 2px solid #0024cb;
+  border-bottom: 2px solid #ffffff;
+  background: #fff;
 }
 @media (max-width: 767px) {
   .erp .smart-teacher-parent .nav.nav-tabs .nav-link {
@@ -2242,6 +2259,7 @@ body {
 @media (max-width: 767px) {
   .erp .smart-teacher-parent .tab-content .shape-9 {
     left: -20px;
+    bottom: 0px;
   }
 }
 .erp .smart-teacher-parent .tab-content .shape-10 {
